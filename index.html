@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Coffee Ordering app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> -->
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img class='coffee-shop-img' src='images/jonas-jacobsson-1iTKoFJvJ6E-unsplash.jpg'
+                alt="picture of the coffee shop">
+            <h1>Take a break</h1>
+            <h2>Enjoy your cup of coffee</h2>
+        </header>
+
+        <main>
+            <div class='menu-item-list' id='menu-item-list'></div>
+            <div class='order-item-list' id='order-item-list'></div>
+        </main>
+
+        <div class='payment-modal' id='payment-modal'>
+            <div class='close-modal-btn-container'>
+                <button class='close-modal-btn' id='close-modal-btn'>X</button>
+                <h3>Enter card details</h3>
+            </div>
+
+            <form class='payment-modal-inner' id='payment-modal-inner'>
+                <input class='payment-details' type='name' name='name' placeholder='Enter your name' required />
+                <input class='payment-details' type='cardNumber' name='cardNumber' placeholder='Enter card number'
+                    required />
+                <input class='payment-details' type='cardCVV' name='cardCVV' placeholder='Enter CVV' required />
+                <button class='pay-button'>Pay</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
