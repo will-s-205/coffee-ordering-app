@@ -1,4 +1,4 @@
-import { menuArray } from '/data.js'
+import { menuArray } from './data.js'
 //console.log(menuArray)
 let orderItemsArray = []
 let isPaid = false
@@ -15,8 +15,8 @@ document.getElementById('close-modal-btn').addEventListener('click', closePaymen
 
 // Event listener for add button
 document.addEventListener('click', function(e){
-    console.log(e.target.dataset.menuItem)
-    console.log(e)
+    // console.log(e.target.dataset.menuItem)
+    // console.log(e)
     
     // Conditional execution if button is clicked
     if (e.target.dataset.menuItem) {

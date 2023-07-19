@@ -1,5 +1,3 @@
-
-
 export const menuArray = [
     {
         name: "Iced Vanilla Latte",
