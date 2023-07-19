@@ -97,16 +97,17 @@ ul {
 
 .remove-button {
     font-size: 12px;
-    margin-left: 15px;
+    margin-left: 25px;
     /* background: none; */
     /* border: 1px solid #000; */
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     box-shadow: 0 0 3px #000;
     color: rgb(179, 0, 0);
     cursor: pointer;
     display: inline;
-    padding: 5px;
+    padding: 10px;
+    font-weight: bold;
 
     &:hover {
         background-color: rgb(179, 0, 0);
@@ -243,4 +244,13 @@ ul {
 
 .loading {
     filter: invert(18%) sepia(0%) saturate(4%) hue-rotate(124deg) brightness(105%) contrast(95%);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #808080;
 }
