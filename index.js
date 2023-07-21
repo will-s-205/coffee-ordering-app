@@ -3,7 +3,6 @@ import { menuArray } from './data.js'
 let orderItemsArray = []
 let isPaid = false
 const paymentModal = document.getElementById('payment-modal')
-const productImage = document.getElementById('product-image')
 
 document.getElementById('payment-modal-inner').addEventListener('submit', function (e) {
     e.preventDefault()
@@ -30,7 +29,6 @@ document.addEventListener('click', function (e) {
         renderPaymentModal()
     }
 })
-
 
 function render() {
     const menuItemList = document.getElementById('menu-item-list')
@@ -187,4 +185,3 @@ function confirmPayment(orderItemsArray) {
         renderOrderList(orderItemsArray) // Argument orderItemsArray required to be passed 
     }, 3000)
 }
-
