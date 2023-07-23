@@ -1,7 +1,7 @@
 import { menuArray } from './data.js'
 //console.log(menuArray)
 let orderItemsArray = []
-let isPaid = false
+let isOrder = false
 const paymentModal = document.getElementById('payment-modal')
 
 document.getElementById('payment-modal-inner').addEventListener('submit', function (e) {
@@ -106,7 +106,7 @@ function renderOrderList(orderItemsArray) {
         totalPrice += orderItem.price
     })
 
-    if (orderHtml && !isPaid) {
+    if (orderHtml && !isOrder) {
         orderItemList.innerHTML += `
             <h4>Your Order</h4>
             ${orderHtml}
@@ -116,7 +116,7 @@ function renderOrderList(orderItemsArray) {
             <button class='complete-order' data-complete-order="${totalPrice}" id='complete-order'>Complete Order</button>
             `
     }
-    else if (orderHtml && isPaid) {
+    else if (orderHtml && isOrder) {
         orderHtml = ''
         totalPrice = 0
         orderItemsArray.forEach(function (orderItem) {
@@ -180,7 +180,7 @@ function confirmPayment(orderItemsArray) {
         </div>
         `
 
-    isPaid = true
+    isOrder = true
     setTimeout(function () {
         renderOrderList(orderItemsArray) // Argument orderItemsArray required to be passed 
     }, 3000)
