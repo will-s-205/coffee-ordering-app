@@ -234,12 +234,11 @@ ul {
     padding: 5px;
     background: #3a2d008a;
     cursor: pointer;
+}
 
-    &:hover {
-        background-color: #3a2d00;
-        transform: scale(1.1);
-    }
-
+.menu-item-pic:hover {
+    background-color: #3a2d00;
+    transform: scale(1.1);
 }
 
 .loading {
